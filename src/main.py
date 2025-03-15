@@ -17,7 +17,7 @@ if __name__ == "__main__":
     # Process data
     #####################################################
     logger.info("starting ETL process...")
-    etl_tool = DataIngestionTool(source_db_config, target_db_config)
+    etl_tool = DataIngestionTool(source_db_config, target_db_config, app_name="postgress_ingestor")
     etl_tool.run(source_queries_to_tables)
     try:
         etl_tool.run(source_queries_to_tables)

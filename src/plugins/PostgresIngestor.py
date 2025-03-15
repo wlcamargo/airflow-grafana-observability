@@ -10,16 +10,16 @@ from observability.tracer import TelemetryTracer
 
 
 class DataIngestionTool:
-    def __init__(self, source_config, target_config):
+    def __init__(self, source_config, target_config, app_name):
         """
         Initializes the DataIngestionTool with source and target configurations.
         """
         self.logger = ConsoleLogger(
-            otlp_endpoint="http://172.18.206.109:4317", app_name="SQL_Processor_App"
+            otlp_endpoint="http://172.18.206.109:4317", app_name=app_name
         )
         self.tracer = TelemetryTracer()
         self.tracer.setup(
-            otlp_endpoint="http://172.18.206.109:4317", app_name="SQL_Processor_App"
+            otlp_endpoint="http://172.18.206.109:4317", app_name=app_name
         )
 
         self.source_config = source_config
