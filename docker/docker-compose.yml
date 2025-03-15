@@ -333,5 +333,5 @@ volumes:
     driver: local
 
 networks:
-  network-bigdata:
+  airflow_default:
     external: true
