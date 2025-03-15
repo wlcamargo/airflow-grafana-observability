@@ -1,0 +1,7 @@
+opentelemetry-distro==0.52b0
+opentelemetry-exporter-otlp==1.31.0
+opentelemetry-instrumentation-celery==0.52b0
+opentelemetry-instrumentation-logging==0.52b0
+psycopg2-binary==2.9.10
+duckdb==1.2.1
+pandas==2.2.3
