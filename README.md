@@ -5,7 +5,7 @@ Nessa stack o objetivo é fazer o Airflow orquestrar um processo com o Docker Op
 ![image](assets/architecture.png)
 
 ## Video Tutorial
-Link: 
+Link: https://youtu.be/kIqbvSd_rH8
 
 ## Pré-requisitos
 
